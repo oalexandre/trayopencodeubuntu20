@@ -19,6 +19,29 @@ Para prosseguir com a instalaçao abordamos a seguinte estratégia:
 - instalação manual do openSSL1.0
 - instalação manual das libs compatíveis.
 
-##Passo 1: Instalação do rbenv para seu usuário
+### Passo 1: Instalação do rbenv para seu usuário
 
-  sudo apt update
+Atualize seu APT
+    sudo apt update
+
+Instale as dependências
+    sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev
+
+Baixe, instale e adicione o rbenv ao seu PATH
+    git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+    echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+
+    echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+
+    source ~/.bashrc
+
+Seguimos então com a instalação do ruby-build
+    git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+    
+
+
+
+
+
+
