@@ -6,6 +6,17 @@ https://github.com/tray-tecnologia/opencode_theme
 
 Todavia esta biblioteca está EXTREMAMENTE desatualizada e é compatível apenas com Ruby de 2.1 ao 2.3.8.
 
+# update 23/02/2021 - Script Automatizado
+
+Com a ajuda do @rhandrade quie converteu este tutorial em um script, agora você pode clocar este repositório e executar diretamente o install-opencode-ubuntu.sh direto em seu computador. Para isso basta dar permissão de escrita ao arquivo e depois executá-lo.
+
+    chmod a+x install-opencode-ubuntu.sh
+    ./install-opencode-ubuntu.sh
+
+IMPORTANTE: o script pedir a senha de seu usuário pois alguns comandos rodam com SUDO.
+
+# Segue embasamento usado para construção do script.
+
 Para instalar o Ruby 2.3 em estações ubuntu/linux modernas, temos algumas dificuldades devido a bibliotecas depreciadas entre outros problemas.
 
 Os principais problemas encontrados foram:
