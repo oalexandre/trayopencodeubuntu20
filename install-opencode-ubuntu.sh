@@ -1,7 +1,7 @@
 VERSION='2.3.3'
 
 sudo apt update && \
-sudo apt install -y autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev;
+sudo apt install -y autoconf bison build-essential libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev;
 
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
@@ -18,9 +18,10 @@ sudo dpkg -i libssl1.0-dev_1.0.2n-1ubuntu5.6_amd64.deb;
 mkdir -p "$(rbenv root)"/plugins && \
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build;
 
-sudo rbenv install $VERSION && \
-sudo rbenv global $VERSION;
+rbenv install $VERSION && \
+rbenv global $VERSION;
 
-sudo gem install faraday -v 1.0.1 && \
-sudo gem install launchy -v 2.4.3 && \
+gem install faraday -v 1.0.1 && \
+gem install launchy -v 2.4.3 && \
+gem install nokogiri -v 1.6.8 && \
 sudo gem install opencode_theme;
