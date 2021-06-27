@@ -38,7 +38,9 @@ Atualize seu APT
 
 Instale as dependências
 
-    sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev
+    sudo apt install autoconf bison build-essential libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev
+
+IMPORTANTE: talvez você precise remover a libssldev atual ou a libssl1.1 caso estejam instaladas.
 
 Baixe, instale e adicione o rbenv ao seu PATH
 
@@ -96,6 +98,9 @@ Existem uma série de incompatibilidades de versão devido ao módulo estar desa
     gem install faraday -v 1.0.1 
     
     gem install launchy -v 2.4.3
+    
+    gem install nokogiri -v 1.6.8
+
 
 Agora sim podemos instalar o opencode_theme
 
