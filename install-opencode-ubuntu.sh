@@ -9,11 +9,12 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 
-wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.6_amd64.deb && \
-sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu5.6_amd64.deb;
+wget 	http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb
+sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb
 
-wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0-dev_1.0.2n-1ubuntu5.6_amd64.deb;
-sudo dpkg -i libssl1.0-dev_1.0.2n-1ubuntu5.6_amd64.deb;
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0-dev_1.0.2n-1ubuntu5_amd64.deb
+sudo dpkg -i libssl1.0-dev_1.0.2n-1ubuntu5_amd64.deb
+ 
 
 mkdir -p "$(rbenv root)"/plugins && \
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build;
@@ -24,4 +25,4 @@ rbenv global $VERSION;
 gem install faraday -v 1.0.1 && \
 gem install launchy -v 2.4.3 && \
 gem install nokogiri -v 1.6.8 && \
-sudo gem install opencode_theme;
+gem install opencode_theme;
