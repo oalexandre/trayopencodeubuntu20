@@ -1,7 +1,7 @@
 VERSION='2.3.3'
-
+sudo apt remove libssl-dev
 sudo apt update && \
-sudo apt install -y autoconf bison build-essential libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev;
+sudo apt install -y autoconf bison build-essential libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev rbenv;
 
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
